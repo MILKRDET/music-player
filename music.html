@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewJeans Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+</head>
+<body>
+    <div class="music-player">
+        <div class="cover">
+            <img src="Cover/attention.jpg" alt="NewJeans Album Cover">
+        </div>
+
+        <div class="song-info">
+            <h2>Attention</h2>
+            <p>NewJeans</p>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress"></div>
+            <div class="time-info">
+                <span class="current-time">0:00</span>
+                <span class="duration">3:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="shuffle-btn"><i class="fas fa-random"></i></button>
+            <button class="prev-btn"><i class="fas fa-step-backward"></i></button>
+            <button class="play-btn"><i class="fas fa-play"></i></button>
+            <button class="next-btn"><i class="fas fa-step-forward"></i></button>
+            <button class="repeat-btn"><i class="fas fa-redo"></i></button>
+        </div>
+
+        <div class="volume-container">
+            <i class="fas fa-volume-down"></i>
+            <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.7">
+            <i class="fas fa-volume-up"></i>
+        </div>
+
+        <div class="playlist">
+            <div class="playlist-item active">
+                <img src="Cover/attention.jpg" alt="Attention Cover">
+                <div class="playlist-item-info">
+                    <h4>Attention</h4>
+                    <p>NewJeans</p>
+                </div>
+            </div>
+            <div class="playlist-item">
+                <img src="Cover/hypeboy.jpg" alt="Hype Boy Cover">
+                <div class="playlist-item-info">
+                    <h4>Hype Boy</h4>
+                    <p>NewJeans</p>
+                </div>
+            </div>
+            <div class="playlist-item">
+                <img src="Cover/cookie.jpg" alt="Cookie Cover">
+                <div class="playlist-item-info">
+                    <h4>Cookie</h4>
+                    <p>NewJeans</p>
+                </div>
+            </div>
+            <div class="playlist-item">
+                <img src="Cover/hurt.jpg" alt="Hurt Cover">
+                <div class="playlist-item-info">
+                    <h4>Hurt</h4>
+                    <p>NewJeans</p>
+                </div>
+            </div>
+            <div class="playlist-item">
+                <img src="Cover/ditto.jpg" alt="Ditto Cover">
+                <div class="playlist-item-info">
+                    <h4>Ditto</h4>
+                    <p>NewJeans</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="music.js"></script>
+</body>
+</html>
